@@ -1,20 +1,20 @@
 import { Typography, Card } from "@material-tailwind/react";
 import React from "react";
 import { Routes, Route } from 'react-router-dom';
-import Login from './pages/Login';
-import Home from './pages/home';
-import Register from './pages/signUp';
+import Login from '../src/pages/login';
+import Home from '../src/pages/home';
+import Register from '../src/pages/signUp';
 import Admin from "./Admin/Admin";
 import { RegistrationForm } from "./Theater/Register";
-import Ownertheaters from "./pages/ownertheaters";
+import Ownertheaters from "../src/pages/ownertheaters";
 import Theaters from "./components/theaters";
-import TheaterSingleView from "./pages/theatersingleview";
-import News from "./pages/news";
+import TheaterSingleView from "../src/pages/theatersingleview";
+import News from "../src/pages/news";
 import { UserTable } from "./Admin/components/userstable";
-import { MovieCard } from "./pages/movieslist";
-import UserProfile from "./pages/userprofile";
-import SeatBookingApp from "./pages/theaterseats";
-import TheatersForMovie from "./pages/theaterformovies";
+import { MovieCard } from "../src/pages/movieslist";
+import UserProfile from "../src/pages/userprofile";
+import SeatBookingApp from "../src/pages/theaterseats";
+import TheatersForMovie from "../src/pages/theaterformovies";
 import { ToastContainer } from "react-toastify";
 
 
