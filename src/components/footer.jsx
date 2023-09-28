@@ -1,10 +1,11 @@
 import { Typography } from "@material-tailwind/react";
+import logo from './static/Untitled-1-01.jpg'
  
 export function FooterWithLogo() {
   return (
     <footer className="w-full bg-gray-300 p-8 rounded-lg">
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-gray-300 text-center md:justify-between">
-        <img src="src/components/static/Untitled-1-01.jpg" alt="logo-ct" className="w-10" />
+        <img src={logo} alt="logo-ct" className="w-10" />
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <li>
             <Typography
