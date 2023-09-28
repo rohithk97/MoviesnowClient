@@ -1,0 +1,33 @@
+/* Add this CSS to your stylesheet or create a separate CSS file */
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the search bar horizontally */
+    border: 1px solid #030d25;
+    border-radius: 5px;
+    padding: 1px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .search-icon {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    color: #555; /* Icon color */
+  }
+
+  .search-ico {
+  border: 1px solid #051334;
+}

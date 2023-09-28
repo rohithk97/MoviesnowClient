@@ -1,0 +1,74 @@
+/* UserProfile.css */
+
+/* Style for the loading message */
+.loading {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  /* Style for the user profile container */
+  .user-profile {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the user profile heading */
+  .user-profile h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Style for the profile info container */
+  .profile-info {
+    margin-top: 20px;
+  }
+  
+  /* Style for individual profile info items */
+  .profile-info p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .profile-info strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style for the user profile image */
+  .profile-image {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for additional profile information */
+  .additional-info {
+    margin-top: 20px;
+  }
+  
+  /* Style for links or buttons (customize as needed) */
+  .profile-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-button:hover {
+    background-color: #0056b3;
+  }
+  

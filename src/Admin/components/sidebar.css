@@ -1,0 +1,14 @@
+/* CSS for the sidebar container */
+.sidebar-container {
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Additional styles for the sidebar */
+  /* You can customize the background, width, etc. */
+  /* Add any other styles specific to your use case */
+  

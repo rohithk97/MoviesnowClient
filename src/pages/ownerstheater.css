@@ -1,0 +1,30 @@
+/* Ownertheaters.css */
+
+.owner-theaters-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .register-button {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap's primary color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .register-button:hover {
+    background-color: #0056b3; /* Darken the color on hover */
+  }
+  
+  /* Add any additional styles as needed */
+  

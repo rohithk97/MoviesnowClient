@@ -1,0 +1,60 @@
+/* PaymentConfirmation.css */
+
+/* Styling for the entire dialog */
+.invoice-dialog {
+    max-width: 500px; /* Adjust to your desired width */
+    margin: 0 auto;
+  }
+  
+  /* Styling for the header section */
+  .invoice-header {
+    background-color: #021b36;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styling for the body section */
+  .invoice-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styling for individual sections within the body */
+  .invoice-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #ccc; /* Add a bottom border to separate sections */
+    padding-bottom: 5px; /* Add some padding for spacing */
+  }
+  
+  /* Styling for the information within sections */
+  .invoice-info {
+    font-weight: bold;
+  }
+  
+  /* Styling for the footer section */
+  .invoice-footer {
+    text-align: right;
+    padding: 20px;
+  }
+  
+  /* Styling for the "Confirm Payment" button */
+  .invoice-confirm-button {
+    background-color: #021b36;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Styling for the "Cancel" button */
+  .invoice-cancel-button {
+    color: #ff0000;
+    cursor: pointer;
+  }
+  

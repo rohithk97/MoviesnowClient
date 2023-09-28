@@ -1,0 +1,32 @@
+/* Add these styles to your CSS file */
+section {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  /* Style the Card components */
+  .w-96 {
+    width: calc(33.33% - 1rem); /* Display three cards per row */
+  }
+  
+  /* Pagination styles */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
