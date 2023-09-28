@@ -10,7 +10,7 @@ import useRazorpay from "react-razorpay";
 import axios from "axios";
 import "./css/paymentconfirmation.css"
 import { FooterWithLogo } from "../components/footer";
-import { razorpay_key } from "./env";
+// import { razorpay_key } from "./env";
 import { API_URL } from "../config/config";
  
 export function Paymentconfirmation({bookingdetails,selectedTheaterId,selectedMovieId,selectedTimeSlot,selectedSeats,selectedDate}) {
@@ -21,6 +21,8 @@ export function Paymentconfirmation({bookingdetails,selectedTheaterId,selectedMo
   };
   const [open, setOpen] = React.useState(false);
   const [Razorpay] = useRazorpay(); 
+  // last change
+  const Razorpay_key = process.env.RAZORPAY_KEY
  
   const bookingDetails =bookingdetails;
   const handlebooking =()=> handleBooking;
@@ -28,7 +30,7 @@ export function Paymentconfirmation({bookingdetails,selectedTheaterId,selectedMo
   const handlePayment = async (params) => {
   
     const options = {
-      key: razorpay_key, // Enter the Key ID generated from the Dashboard
+      key: Razorpay_key, // Enter the Key ID generated from the Dashboard
       amount: bookingDetails.total*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
       currency: "INR",
       name: "Movies Now",

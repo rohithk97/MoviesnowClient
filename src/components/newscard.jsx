@@ -8,13 +8,15 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import { news_api } from "../pages/env";
+// import { news_api } from "../pages/env";
 
 
 
 export function Newscard() {
   const [latestNews, setLatestNews] = useState([]);
   const newsLimit = 15; // Change this to the desired number of news articles to display
+
+  const news_api = process.env.NEWS_API
 
   useEffect(() => {
     const apiKey = news_api

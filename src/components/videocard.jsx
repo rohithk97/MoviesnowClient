@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { video_apiKey } from '../pages/env';
+// import { video_apiKey } from '../pages/env';
 
 export default function VideoCard() {
   const [trailerKey, setTrailerKey] = useState('');
   const [error, setError] = useState(null);
+
+  const video_apiKey = process.env.VIDEO_API_KEY
 
   useEffect(() => {
     const apiKey =video_apiKey
