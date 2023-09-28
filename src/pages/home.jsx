@@ -9,6 +9,7 @@ import "./css/home.css"
 
 
 const Home = () => {
+  print('hiii')
   
   return (
     <div>
