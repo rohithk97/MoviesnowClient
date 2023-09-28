@@ -16,7 +16,7 @@ export function Newscard() {
   const [latestNews, setLatestNews] = useState([]);
   const newsLimit = 15; // Change this to the desired number of news articles to display
 
-  const news_api = process.env.NEWS_API
+  const news_api = 'f0227d846fe94a518dcfda1eafe7ebc8'
 
   useEffect(() => {
     const apiKey = news_api

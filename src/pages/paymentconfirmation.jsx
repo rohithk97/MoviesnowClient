@@ -22,7 +22,7 @@ export function Paymentconfirmation({bookingdetails,selectedTheaterId,selectedMo
   const [open, setOpen] = React.useState(false);
   const [Razorpay] = useRazorpay(); 
   // last change
-  const Razorpay_key = process.env.RAZORPAY_KEY
+  const Razorpay_key = 'rzp_test_xzvmvRpaucG2iz'
  
   const bookingDetails =bookingdetails;
   const handlebooking =()=> handleBooking;

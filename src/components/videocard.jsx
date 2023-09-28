@@ -6,7 +6,7 @@ export default function VideoCard() {
   const [trailerKey, setTrailerKey] = useState('');
   const [error, setError] = useState(null);
 
-  const video_apiKey = process.env.VIDEO_API_KEY
+  const video_apiKey = 'ab0878cfcdf66cc8bc9710ce54549c39'
 
   useEffect(() => {
     const apiKey =video_apiKey
