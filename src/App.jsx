@@ -16,6 +16,7 @@ import UserProfile from "../src/pages/userprofile";
 import SeatBookingApp from "../src/pages/theaterseats";
 import TheatersForMovie from "../src/pages/theaterformovies";
 import { ToastContainer } from "react-toastify";
+import PrivateRoute from "./pages/Routes/UserProtectedRoute";
 
 
 
@@ -24,8 +25,10 @@ export default function App() {
   return (
     <>
     <Routes>
+      
         <Route path="/login" element={<Login/>} />
-        <Route index path="/" element={<Home />} />
+      
+        <Route index path="/" element={<PrivateRoute><Home /></PrivateRoute>} />
         <Route path="/signup" element={<Register />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/u" element={<UserTable />} />
@@ -41,6 +44,7 @@ export default function App() {
 
       </Routes>
       <ToastContainer style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} />
+      
     </>
   );
 }
