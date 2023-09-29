@@ -16,7 +16,8 @@ import UserProfile from "../src/pages/userprofile";
 import SeatBookingApp from "../src/pages/theaterseats";
 import TheatersForMovie from "../src/pages/theaterformovies";
 import { ToastContainer } from "react-toastify";
-import PrivateRoute, { AdminRoute } from "./pages/Routes/UserProtectedRoute";
+import { AdminRoute, PrivateRoute } from "./pages/Routes/UserProtectedRoute";
+
 
 
 
