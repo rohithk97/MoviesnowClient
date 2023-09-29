@@ -11,7 +11,7 @@ export const PrivateRoute = ({children, ...rest}) => {
 export const AdminRoute = ({children, ...rest}) => {
     const user = JSON.parse(localStorage.getItem('user')); // Parse as a boolean
     
-    if (user && user.Admin === 'true') {
+    if (user && user.Admin === 'True') {
         return children;
       } else {
         return <Navigate to='/login' />;

@@ -10,6 +10,7 @@ import {
 } from '@material-tailwind/react';
 import { API_URL } from '../config/config';
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 export function RegistrationForm() {
   const [formData, setFormData] = useState({
@@ -20,6 +21,7 @@ export function RegistrationForm() {
     photo: null,
     description: '',
   });
+  const navigate = useNavigate();
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -52,6 +54,7 @@ export function RegistrationForm() {
           'Content-Type': 'multipart/form-data',
         },
       });
+      navigate('/owner')
       toast("Theater has been registered successfully")
       // Registration success, handle accordingly (e.g., show success message, redirect, etc.).
     } catch (error) {
