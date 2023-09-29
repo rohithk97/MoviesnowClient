@@ -9,7 +9,8 @@ export const PrivateRoute = ({children, ...rest}) => {
 }
 
 export const AdminRoute = ({children, ...rest}) => {
-    let [admin, setAdmin] = useState(()=> (localStorage.getItem('user') ? localStorage.getItem('user.Admin') : null ))
+    const admin = localStorage.getItem('user.Admin') === 'True'; // Parse as a boolean
+
     return !admin ? <Navigate to='/login'/> : children;
 }
 
