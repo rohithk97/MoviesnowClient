@@ -25,8 +25,16 @@ export function Paymentconfirmation({bookingdetails,selectedTheaterId,selectedMo
   const Razorpay_key = 'rzp_test_xzvmvRpaucG2iz'
  
   const bookingDetails =bookingdetails;
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+
   const handlebooking =()=> handleBooking;
   const handleOpen = () => setOpen(!open);
+
+
   const handlePayment = async (params) => {
   
     const options = {
@@ -67,6 +75,7 @@ export function Paymentconfirmation({bookingdetails,selectedTheaterId,selectedMo
           .then((response) => {
             console.log('Booking successful:', response.data);
             // Handle success, e.g., display a success message to the user
+            handleClose ();
           })
           .catch((error) => {
             console.error('Booking failed:', error);
