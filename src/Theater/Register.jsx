@@ -9,6 +9,7 @@ import {
   Typography,
 } from '@material-tailwind/react';
 import { API_URL } from '../config/config';
+import { toast } from 'react-toastify';
 
 export function RegistrationForm() {
   const [formData, setFormData] = useState({
@@ -51,6 +52,7 @@ export function RegistrationForm() {
           'Content-Type': 'multipart/form-data',
         },
       });
+      toast("Theater has been registered successfully")
       // Registration success, handle accordingly (e.g., show success message, redirect, etc.).
     } catch (error) {
       // Handle any network errors or other issues.
