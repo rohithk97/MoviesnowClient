@@ -66,7 +66,7 @@ function TheatersForMovies() {
     <div className="theater-container">
       <div className="movie-image">
         {movie && (
-          <img src={`${API_URL}${movie?.image}`} alt={movie?.title} />
+          <img src={movie?.image} alt={movie?.title} />
         )}
         {movie && (
           <div className="movie-details">
@@ -82,7 +82,7 @@ function TheatersForMovies() {
         {theaters?.map((theater) => (
           <div key={theater.id} className="theater-item flex justify-between">
             <div>
-              <img src={`${API_URL}${theater?.photo}`} alt='' />
+              <img src={theater?.photo} alt='' />
               <h3>{theater.name}</h3>
               <p>Location: {theater.location}</p>
               {/* Add more theater details as needed */}

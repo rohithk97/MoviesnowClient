@@ -58,7 +58,7 @@ const Ownertheaters = () => {
             <Card className="mt-6 w-64">
               <CardHeader color="blue-gray" className="relative h-40">
                 <img
-                  src={`${API_URL}${theater.photo}`}
+                  src={theater.photo}
                   alt=""
                 />
               </CardHeader>
